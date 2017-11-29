@@ -1,0 +1,21 @@
+
+Operations That Do Not Require root Privileges
+-------------------------------------------------
+
+A regular account user can perform some operations requiring special
+permissions; however, the system configuration must allow such abilities
+to be exercised.
+
+SUID (Set owner User ID upon execution—similar to the Windows "run as"
+feature) is a special kind of file permission given to a file. SUID
+provides temporary permissions to a user to run a program with the
+permissions of the file owner  (which may be root) instead of the
+permissions held by the user.
+
+Examples of operations which do not require root privileges:
+
+ >> Running a network client
+ >> Using devices such as printers
+ >> Operations on files that the user has proper permissions to access.
+ >> Running SUID-root applications.
+

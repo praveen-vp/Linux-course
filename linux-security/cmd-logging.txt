@@ -1,0 +1,15 @@
+
+Command Logging
+-------------------
+
+By default, sudo commands and any failures are logged in /var/log/auth.log
+under the Debian distribution family, and in /var/log/messages or
+/var/log/secure on other systems. This is an important safeguard to
+allow for tracking and accountability of sudo use. A typical entry of
+the message contains:
+
+ > Calling username
+ > Terminal info
+ > Working directory
+ > User account invoked
+ > Command with arguments

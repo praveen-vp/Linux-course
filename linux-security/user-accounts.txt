@@ -1,0 +1,69 @@
+
+User Accounts
+----------------------------------
+
+The Linux kernel allows properly authenticated users to access files and
+applications. While each user is identified by a unique integer (the
+user id or UID), a separate database associates a username with each
+UID. Upon account creation, new user information is added to the user
+database and the user's home directory must be created and populated
+with some essential files. Command line programs such as useradd and
+userdel as well as GUI tools are used for creating and removing accounts.
+
+For each user, the following seven fields are maintained in the
+/etc/passwd file.
+
+1 -  Username  >  
+        - User login name
+        - Should be between 1 and 32 characters long
+
+2 -  Password  > 
+        - User password (or the character x if the password is stored in 
+            the /etc/shadow file) in encrypted format
+        - it is never shown in Linux when it is being typed; this stops prying eyes
+
+3 -  User ID (UID) > 
+        - Every user must have a user id (UID)
+        - UID 0 is reserved for root user
+        - UID's ranging from 1-99 are reserved for other predefined accounts
+        - UID's ranging from 100-999 are reserved for system accounts and groups (except for RHEL, which reserves only up to 499)
+        - Normal users have UID's of 1000 or greater, except on RHEL where they start at 500
+
+4 -  Group ID (GID) > 
+        - The primary Group ID (GID); Group Identification Number stored in the /etc/group fileWill be covered in detail in the chapter on Processes
+
+5 -  User Info   > 
+        - This field is optional and allows insertion of extra information about the user such as their name.
+        - For example: praveen-vp
+
+6 -  Home Directory  > 
+        - The absolute path location of user's home directoryFor example: /home/praveen-vp
+  
+7 -  Shell   > 
+        -The absolute location of a user's default shell  For example: /bin/bash
+
+
+
+Types of Accounts
+----------------------------------
+By default, Linux distinguishes between several account types in order
+to isolate processes and workloads. Linux has four types of accounts:
+
+  >> root 
+  >> System 
+  >> Normal 
+  >> Network
+For a safe working environment, it is advised to grant the minimum 
+privileges possible and necessary to accounts,and remove inactive accounts. 
+The last utility, which shows the last time each user logged into the system,
+can be used to help identify potentially inactive accounts which are 
+candidates for system removal.
+
+  Keep in mind that practices you use on multi-user business systems are
+more strict than practices you can use on personal desktop systems that
+only affect the casual user. This is especially true with security. We
+hope to show you practices applicable to enterprise servers that you can
+use on all systems, but understand that you may choose to relax these
+rules on your own personal system.
+
+

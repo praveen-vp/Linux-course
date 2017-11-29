@@ -1,0 +1,26 @@
+
+How Passwords are Stored 
+-------------------------
+
+  The system verifies authenticity and identity using user
+credentials. Originally, encrypted passwords were stored in the
+/etc/passwd file, which was readable by everyone. This made it rather
+easy for passwords to be cracked.
+
+  On modern systems, passwords are actually
+stored in an encrypted format in a secondary file named /etc/shadow. Only
+those with root access can modify/read this file.
+
+Password Encryption
+-------------------------
+  Protecting passwords has become a crucial element of security. Most
+Linux distributions rely on a modern password encryption algorithm
+called SHA-512 (Secure Hashing Algorithm 512 bits), developed by the
+U.S. National Security Agency (NSA) to encrypt passwords.
+
+  The SHA-512 algorithm is widely used for security applications and
+protocols. These security applications and protocols include TLS, SSL,
+PHP, SSH, S/MIME and IPSec. SHA-512 is one of the most tested hashing
+algorithms.
+
+

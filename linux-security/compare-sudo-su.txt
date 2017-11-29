@@ -1,0 +1,38 @@
+Comparing sudo and su
+----------------------------
+In Linux you can use either su or sudo to temporarily grant root access
+to a normal user; these methods are actually quite different. Listed
+below are the differences between the two commands.
+
+
+su 
+--
+ > When elevating privilege, you need to enter the root password. 
+  Giving the root password to a normal user should never, ever be done.
+
+ > Once a user elevates to the root account using su, the user can do 
+   anything that the root user can do for as long as the user wants, 
+   without being asked again for a password.  
+
+ > The command has limited logging features.
+
+sudo 
+---- 
+  > When elevating privilege, you need to enter the user’s 
+     password and not the root password.
+  
+  > Offers more features and is considered more secure and more configurable. 
+    Exactly what the user is allowed to do can be precisely controlled and limited. 
+    By default the user will either always have to keep giving their 
+    password to do further operations with sudo, or can avoid doing 
+    so for a configurable time interval. 
+
+
+sudo Features
+
+  sudo has the ability to keep track of unsuccessful attempts at gaining root access. 
+  Users' authorization for using sudo is based on configuration information stored 
+  in the /etc/sudoers file and in the /etc/sudoers.d directory.
+
+
+
