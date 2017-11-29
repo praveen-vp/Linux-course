@@ -1,0 +1,29 @@
+
+Introduction to emacs
+--------------------------
+
+The emacs editor is a popular competitor for vi. Unlike vi, it does not
+work with modes. emacs is highly customizable and includes a large number
+of features. It was initially designed for use on a console, but was soon
+adapted to work with a GUI as well. emacs has many other capabilities
+other than simple text editing; it can be used for email, debugging, etc.
+
+Rather than having different modes for command and insert, like vi,
+emacs uses the CTRL and Meta (Alt or Esc) keys for special commands.
+
+Working with emacs
+--------------------------
+
+The table lists some of the most important key combinations that are used when starting, exiting, reading, and writing files in emacs.
+
+Key                 Usage
+--------------------------
+emacs myfile    >> Start emacs and edit myfile
+CTRL-x i        >> Insert prompted for file at current position
+CTRL-x s        >> Save all files
+CTRL-x CTRL-w   >> Write to the file giving a new name when prompted
+CTRL-x CTRL-s   >> Saves the current file 
+CTRL-x CTRL-c   >> Exit after being prompted to save any modified files.
+
+The emacs tutorial is a good place to start learning basic emacs commands. 
+It is available any time when in emacs by simply typing CTRL-h (for help) and then the letter t for tutorial.

@@ -1,0 +1,18 @@
+
+Using External Commands 
+-------------------------
+
+Typing :sh command opens an external command shell.  When you exit the
+shell, you will resume your vi editing session.
+
+Typing :!executes a command from within vi. The command follows the
+exclamation point.  This technique best suited for non-interactive
+commands such as: :! wc %
+
+Typing this will run the wc (word count) command on the file; the
+character % represents the file currently being edited.
+
+The 'fmt' command does simple formatting of text.  If you are editing a
+file and want the file to look nice, you can run the file through fmt.
+One way to do this while editing is by using :%!fmt, which runs the entire
+file (the % part) through fmt and replaces the file with the results.

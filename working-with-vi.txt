@@ -1,0 +1,88 @@
+
+The table describes the most important commands used to 
+
+start, exit, read, and write files in vi. 
+>> The ENTER key needs to be pressed after all of these commands.
+___________________________________________________________________________________
+| Command    |    Usage                                                            |
+|------------|---------------------------------------------------------------------|
+  vi -r       myfileStart vi and edit myfile in recovery mode from a system crash
+  :r file2    Read in file2 and insert at current position
+  :w! file2   Overwrite file2
+  :x or :wq   Exit vi and write out modified file
+
+-----------------------------------------------------------------------------------
+
+
+Changing Cursor Positions in vi
+----------------------------------
+
+The table describes the most important keystrokes used when changing cursor position in vi. 
+Line mode commands (those following colon (:)) require the ENTER key to be pressed after the command is typed.
+
+________________________________________________________________
+| Key               | Usage                                     |              
+|_______________________________________________________________|
+
+  >> j or <ret>          >> To move one line down
+  >> k                   >> To move one line up
+  >> h or Backspace      >> To move one character left
+  >> l or Space          >> To move one character right
+  >> 0                   >> To move to beginning of line
+  >> $                   >> To move to end of line
+  >> w                   >> To move to beginning of next word
+
+  :0 or 1G               >> To move to beginning of file
+  :n or nG               >> To move to line n
+  :$ or G                >> To move to last line in file
+  CTRL-F or Page Down   >> To move forward one page
+  CTRL-B or Page Up     >> To move backward one page
+  ^l                    >> To refresh and center screen
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+  Key               Usage
+----------------------------------------------------------------
+  a             >> Append text after cursor; stop upon Escape key
+  A             >> Append text at end of current line; stop upon Escape key
+  i             >> Insert text before cursor; stop upon Escape key
+  I             >> Insert text at beginning of current line; stop upon Escape key
+  o             >> Start a new line below current line, insert text there; stop upon Escape key
+  O             >> Start a new line above current line, insert text there; stop upon Escape key
+  r             >> Replace character at current position
+  R             >> Replace text starting with current position; stop upon Escape key
+  x             >> Delete character at current position
+  Nx            >> Delete N characters, starting at current position
+  dw            >> Delete the word at the current position
+  D             >> Delete the rest of the current line
+  dd            >> Delete the current line
+  Ndd or dNd    >> Delete N lines
+  u             >> Undo the previous operation
+  yy            >> Yank (copy) the current line and put it in buffer
+  Nyy or yNy    >> Yank (copy) N lines and put it in buffer
+  p             >> Paste at the current position the yanked line or lines from the buffer.
+
+--------------------------------------------------------------------
+
+
+Using External Commands 
+-------------------------
+
+Typing :sh command opens an external command shell.  When you exit the
+shell, you will resume your vi editing session.
+
+Typing :!executes a command from within vi. The command follows the
+exclamation point.  This technique best suited for non-interactive
+commands such as: :! wc %
+
+Typing this will run the wc (word count) command on the file; the
+character % represents the file currently being edited.
+
+The 'fmt' command does simple formatting of text.  If you are editing a
+file and want the file to look nice, you can run the file through fmt.
+One way to do this while editing is by using :%!fmt, which runs the entire
+file (the % part) through fmt and replaces the file with the results.
+
+
+
