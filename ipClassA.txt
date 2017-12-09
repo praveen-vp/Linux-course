@@ -1,0 +1,16 @@
+
+	Class A Network Addresses 
+	==========================
+
+ > Class A addresses use the first octet of an IP address as their
+ Net ID and use the other three octets as the Host ID. The first bit
+ of the first octet is always set to zero. So you can use only 7-bits
+ for unique network numbers. As a result, there are a maximum of 126
+ Class A networks available (the addresses 0000000 and 1111111 are
+ reserved). Not surprisingly, this was only feasible when there were
+ very few unique networks with large numbers of hosts. As the use of the
+ Internet expanded, Classes B and C were added in order to accomodate
+ the growing demand for independent networks.
+
+Each Class A network can have up to 16.7 million unique hosts on its
+network. The range of host address is from 1.0.0.0 to 127.255.255.255.

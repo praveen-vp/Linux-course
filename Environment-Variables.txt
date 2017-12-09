@@ -85,4 +85,44 @@ $ echo $SHELL
 /bin/bash
 $
 
+History Files
+--------------
+
+The list of commands is displayed with the most recent command appearing last in the list.
+This information is stored in ~/.bash_history.
+
+ >> Using History Environment Variables
+
+	Several associated environment variables can be used to get information about the history file. 
+
+	'HISTFILE' stores the location of the history file. 
+
+	'HISTFILESIZE' stores the maximum number of lines in the history file.
+
+	'HISTSIZE' stores the maximum number of lines in the history file for the current session.
+
+
+'!!' (Pronounced as bang-bang)	Execute the previous command
+
+$ !!
+echo $SHELL
+/bin/bash
+
+
+Executing Previous Commands
+----------------------------
+
+The table describes the syntax used to execute previously used commands.
+
+	!		Start a history substitution
+	!$		Refer to the last argument in a line
+	!n		Refer to the nth command line
+	!string		Refer to the most recent command starting with string
+
+
+
+	$ !1   # Execute command #1 above
+	$ !sl  # Execute the command beginning with "sl"
+	
+
 

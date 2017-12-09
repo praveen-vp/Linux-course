@@ -1,0 +1,16 @@
+Creating Aliases
+------------------
+
+You can create customized commands or modify the behavior of 
+already existing ones by creating aliases. Most often these 
+aliases are placed in your ~/.bashrc file so they are available
+to any command shells you create.
+
+Typing alias with no arguments will list currently defined aliases.
+
+Please note there should not be any spaces on either side of 
+the equal sign and the alias definition needs to be placed within 
+either single or double quotes if it contains any spaces.
+
+
+

@@ -1,0 +1,29 @@
+
+IPV4 
+=====
+
+ 	> 32 bit
+	> 4 parts of 8 bits (octet)
+	
+	  > 172.16.31.46
+	  > 10101100.00010000.000111111.00101110
+
+	>> Network addresses are divided into five classes.
+
+	 	   octet1      octet2	 octet3	 octet4
+	> Class A  networkID  Host ID    Host ID     Host ID
+	> Class B  networkID  networkID  Host ID     Host ID
+	> Class C  networkID  networkID  networkID   Host ID
+	> Class D 	Milticast Address
+	> Class E  	Reserved for Future Use
+
+  	Classes A, B and C are classified into two parts, network addresses (Net ID) and Host Address (Host ID).
+
+
+	Class D is used for multi cast applications (information broadcast to multiple computers simultaneously).
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+nano  is easy to use, and requires very little effort to learn. 
+To open a file in nano, type nano <filename> and press Enter.  
+If the file doesn't exist, it will be created.
+
+nano provides a two line “shortcut bar” at the bottom of 
+the screen that lists the available commands. Some of these commands are:
+
+CTRL-G: Display the help screen
+CTRL-O: Write to a file
+CTRL-X: Exit a file
+CTRL-R: Insert contents from another file to the current buffer
+CTRL-C: Cancels previous commands
+

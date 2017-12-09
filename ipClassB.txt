@@ -1,0 +1,16 @@
+
+Class B Network Addresses
+
+	> Class B addresses use the first two octets of the IP address
+	as their Net ID and the last two octets as the Host ID. The
+	first two bits of the first octet are always set to binary 10,
+	so there are a maximum of 16,384 (14-bits) Class B networks. The
+	first octet of a Class B address has values from 128 to 191. 
+	
+	> The introduction of Class B networks expanded the number of networs but it soon became clear that a further level would be needed.
+
+	Each Class B network can support a maximum of 65,536 unique hosts on its network. 
+	
+	> The range of host address is from 128.0.0.0 to 191.255.255.255.
+
+

@@ -1,0 +1,57 @@
+File Ownership
+-------------------
+
+In Linux and other UNIX-based operating systems, every file is 
+associated with a user who is the owner. Every file is also 
+associated with a group (a subset of all users) which has an interest 
+in the file and certain rights, or permissions: read, write, and execute.
+
+The following utility programs involve user and group ownership and permission setting.
+
+Command	Usage
+chown	Used to change user ownership of a file or directory
+chgrp	Used to change group ownership
+chmod	Used to change the permissions on the file which can be 
+	done separately for owner, group and the rest of the world.
+
+
+File Permission Modes and chmod
+----------------------------------
+
+Files have three kinds of permissions: read (r), write (w), execute (x).
+These are generally represented as in 'rwx'. 
+These permissions affect three groups of owners: user/owner (u), group (g), and others (o).
+
+As a result, you have the following three groups of three permissions:
+
+rwx: rwx: rwx
+ u:   g:   o
+
+There are a number of different ways to use chmod. 
+To give the owner and others execute permission and remove the group write permission:
+
+$ ls -l test1
+-rw-rw-r-- 1 coop coop 1601 Mar 9 15:04 test1
+$ chmod uo+x,g-w test1
+$ ls -l test1
+-rwxr--r-x 1 coop coop 1601 Mar 9 15:04 test1
+
+NOTE: where u stands for user (owner), 
+------      o stands for other (world), 
+	    g stands for group.
+
+$ chmod 755 test1
+
+Example of chown
+-----------------
+
+$ sudo chown root file-1
+
+Example of chgrp
+-----------------
+
+$ sudo chgrp bin file-2
+
+
+
+ 
