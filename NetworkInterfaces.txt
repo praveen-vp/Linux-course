@@ -1,0 +1,13 @@
+NetWork Interfaces
+====================
+
+Network intetrfaces are a connection channel between a device and a
+network. Physically, network interfaces can proceed through a network
+interface card(NIC) or can be more abractly implemented as a software.
+Can operate multiple network interfaces simultaneosly.  Specific
+interfaces can be brought up (activated) or brought down (de-activated)
+at any time.
+
+A list of currently active network interfaces is reported by the ifconfig
+utility which you may have to run as the superuser, or at least, give
+the full path, i.e., /sbin/ifconfig, on some distributions.

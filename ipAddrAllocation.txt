@@ -1,0 +1,12 @@
+
+IP Address Allocation 
+=====================
+
+	> Static -- fixed
+	> Dynamic Host Configuration Protocol (DHCP)
+
+	
+	IP address change every time you reboot or even more often.
+
+
+	

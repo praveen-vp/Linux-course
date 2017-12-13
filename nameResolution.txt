@@ -1,0 +1,20 @@
+Name Resolution
+
+Name Resolution is used to convert numerical IP address values into a
+human-readable format known as the hostname. For example, 140.211.169.4
+is the numerical IP address that refers to the linuxfoundation.org
+hostname. Hostnames are easier to remember.
+
+Given an IP address, you can obtain its corresponding hostname. Accessing
+the machine over the network becomes easier when you can type the hostname
+instead of the IP address.
+
+You can view your system’s hostname simply by typing hostname with
+no argument.
+
+Note: If you give an argument, the system will try to change its hostname
+to match it, however, only root users can do that.
+
+The special hostname localhost is associated with the IP address
+127.0.0.1, and describes the machine you are currently on (which normally
+has additional network-related IP addresses).
